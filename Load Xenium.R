@@ -30,7 +30,7 @@ xenium_data$sample <- paste0("sample",i)
 xenium.obj.list[[i]] <- xenium_data
 }
 rm(xenium_data)
-options(future.globals.maxSize = 8 * 1024^3)  # 3GBに設定
+options(future.globals.maxSize = 8 * 1024^3) 
 xenium.obj <- merge(xenium.obj.list[[1]],c(xenium.obj.list[[2]],xenium.obj.list[[3]],xenium.obj.list[[4]],
                                            xenium.obj.list[[5]],xenium.obj.list[[6]],xenium.obj.list[[7]],xenium.obj.list[[8]],
                                            xenium.obj.list[[9]],xenium.obj.list[[10]],xenium.obj.list[[11]],xenium.obj.list[[12]]))
